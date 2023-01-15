@@ -1,15 +1,18 @@
+var result = []
+var listeEleves = []
 
-const students = [];
-while(!qty){
-   var qty = parseInt (prompt("How many are you"));
+
+for(let i=1; i < 5 ; i++) {
+    var nomEleve = prompt("Prenom de l'eleve" + i);
+    var noteEleve = prompt("Note de l'eleve" + i); 
+    listeEleves.push(nomEleve);
+    result.push(noteEleve);
 }
+for (let i=0; i <result.length; i++){
+    if(result [i]>=70)
+    {
+        examValid = true ;
+        document.write("<h2>Indice : " + (i) + "Prenom de l'eleve: " + listeEleves[i] + "Note: "+result[i] + "</h2>");
+    }
 
-for (let i = 0; i < 5; i++) { 
-   const student = prompt ("What's your name ?"+ (i+1)) .toLowerCase() ;
-students.push(student);
-}
-students.sort();
-var result = students.join(" , ") ;
-alert(result);
-
-console.log (students)
+} 
