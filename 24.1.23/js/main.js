@@ -43,16 +43,16 @@ function createForm() {
          Card(obj)
     } else {
         switch (obj.model) {
-            case "red": document.getElementsByClassName("model.input.value").style.borderColor = "red";
+            case "red": document.getElementsById("model.input.value").style.borderColor = "red";
                 break; }
                 switch (obj.brand) {
-                    case "red": document.getElementsByClassName("brand.input.value").style.borderColor = "red";
+                    case "red": document.getElementsById("brand.input.value").style.borderColor = "red";
                         break;}
                         switch (obj.price) {
-                            case "red": document.getElementsByClassName("price.input.value").style.borderColor = "red";
+                            case "red": document.getElementsById("price.input.value").style.borderColor = "red";
                                 break;  }
                                 switch (obj.category) {
-                                    case "red": document.getElementsByClassName("category.input.value").style.borderColor = "red";
+                                    case "red": document.getElementsById("category.input.value").style.borderColor = "red";
                                         break; 
                                      }
         console.log(obj);

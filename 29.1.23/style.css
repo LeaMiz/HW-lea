@@ -1,0 +1,33 @@
+#main {
+    gap : 10px;
+    display: grid;
+    width : 80 vw;
+    padding : 20 px;
+    background-color:  rgb(137, 134, 134);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-item {
+    background-color: rgb(250, 250, 250);
+    height: 200px;
+
+}
+.flex{
+    display: flex;
+}
+.center {
+    align-items: center;
+    justify-content: center;
+}
+.brand-name{
+    text-align: center;
+}
+.model-item{
+    font-style: italic;
+    text-align: center;
+}
+
+.btn > span {
+    margin-left: 10px;
+    
+}
